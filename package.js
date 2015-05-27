@@ -27,4 +27,4 @@ Package.onTest(function(api) {
 
 Npm.depends({
   "csv-parse": "0.1.1"
-})
+});

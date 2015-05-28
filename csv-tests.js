@@ -13,7 +13,6 @@ if(Meteor.isServer){
 
   Tinytest.add('[csv] Retrieves and parses a csv file from Yahoo', function(test) {
     var data = csv.getcsv(url);
-    console.log(data);
     test.equal(true,_.isArray(data))
     test.equal(2, data.length);
   });

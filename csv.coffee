@@ -13,7 +13,6 @@ class CSV
 
 	# helper function
 	getcsv: (uri, options) ->
-		console.log '-> getcsv'
 		resp = HTTP.get uri
 		if resp.statusCode is 200
 			if not options

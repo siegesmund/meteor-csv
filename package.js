@@ -17,7 +17,6 @@ Package.onUse(function(api) {
   api.use('meteorhacks:npm@1.3.0');
   api.addFiles('csv.coffee');
   api.export('CSV', 'server');
-  api.export('CSV', 'client')
 });
 
 Package.onTest(function(api) {

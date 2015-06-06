@@ -25,5 +25,3 @@ class CSV
 				return null
 		else
 			return null
-
-@CSV = CSV

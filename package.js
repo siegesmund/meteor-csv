@@ -1,6 +1,6 @@
 Package.describe({
   name: 'peter:csv',
-  version: '0.0.1',
+  version: '0.0.2',
   // Brief, one-line summary of the package.
   summary: 'Synchronous CSV parsing based on csv-parse.',
   // URL to the Git repository containing the source code for this package.
@@ -16,6 +16,8 @@ Package.onUse(function(api) {
   api.use('coffeescript');
   api.use('meteorhacks:npm@1.3.0');
   api.addFiles('csv.coffee');
+  api.export('CSV', 'server');
+  api.export('CSV', 'client')
 });
 
 Package.onTest(function(api) {
